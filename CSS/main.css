@@ -1,0 +1,303 @@
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+   font-size: 1px;/*for using REM units*/
+}
+
+* {
+    font-family: "Raleway";
+}
+
+body {
+    background-color: #ffffff;
+    color: #464646;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-align:center;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #464646;
+}
+
+.Azul{
+    color: #2A7AE4;
+}
+
+@media (min-width:0px) {
+
+    .principal,
+    .Header,
+    .Banner,
+    .Sobre,
+    .Skills-Hobbies,
+    .Skills-Hobbies,
+    .Escuelas,
+    .Experiencias,
+    .Contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 25rem;
+    }
+
+    .Contenedor {
+        width: 90%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-block-end: 5rem;
+        padding-bottom: 10rem;
+        line-height: 40rem;
+        width: 100%;
+    }
+
+    p {
+        margin-block-start: 4rem;
+        margin-block-end: 4rem;
+        padding-bottom: 10rem;
+        line-height: 25rem;
+        font-size: 15rem;
+    }
+
+    h2 {
+        font-size: 22rem;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .principal,
+    .Header,
+    .Banner,
+    .Sobre,
+    .Skills-Hobbies,
+    .Skills-Hobbies,
+    .Escuelas,
+    .Experiencias,
+    .Contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 25rem;
+    }
+
+    .Contenedor {
+        width: 95%;
+        min-width: 925rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-block-end: 5rem;
+        padding-bottom: 10rem;
+        line-height: 60rem;
+        width: 100%;
+    }
+
+    p {
+        margin-block-start: 4rem;
+        margin-block-end: 4rem;
+        padding-bottom: 10rem;
+        line-height: 27rem;
+        font-size: 17rem;
+    }
+
+    h2 {
+        font-size: 25rem;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .principal,
+    .Header,
+    .Banner,
+    .Sobre,
+    .Skills-Hobbies,
+    .Skills-Hobbies,
+    .Escuelas,
+    .Experiencias,
+    .Contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 25rem;
+    }
+
+    .Contenedor {
+        width: 70%;
+        min-width: 1040rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-block-end: 5rem;
+        padding-bottom: 10rem;
+        line-height: 60rem;
+        width: 100%;
+    }
+
+    p {
+        margin-block-start: 4rem;
+        margin-block-end: 4rem;
+        padding-bottom: 10rem;
+        line-height: 30rem;
+        font-size: 20rem;
+    }
+
+    h2 {
+        font-size: 28rem;
+        font-weight: bolder;
+    }
+}
+
+.Sobre,
+.Escuelas,
+.Contacto {
+    background-color: #eaf2fd;
+}
+
+
+.Demo {
+    background-color: #2296d4;
+    border-radius: 5rem;
+    border: 1rem solid #246ad4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 7rem 15rem;
+    text-decoration: none;
+    min-width: 100rem;
+    font-weight: bold;
+}
+.Demo:visited{
+    color: #ffffff;   
+}
+.Demo:hover {
+    background-color: #ffffff;
+    color: #2296d4;
+}
+
+.Demo:active {
+    position: relative;
+    top: 1rem;
+}
+
+.Repositorio {
+    background-color: #ffffff;
+    border-radius: 5rem;
+    border: 1rem solid #2296d4;
+    display: inline-block;
+    cursor: pointer;
+    color: #2296d4;
+    padding: 7rem 15rem;
+    text-decoration: none;
+    min-width: 100rem;
+    font-weight: bold;
+
+}
+.Repositorio:visited{
+    color: #2296d4;   
+}
+.Repositorio:hover {
+    background-color: #2296d4;
+    color: #ffffff;
+}
+
+.Repositorio:active {
+    position: relative;
+    top: 1rem;
+}
+
+
+.pie p {
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding: 10rem 0 10rem 0;
+    line-height: 18rem;
+}
+
+@media (min-width:0px) {
+
+
+    .titulo {
+        font-size: 17rem;
+    }
+
+    .subtitulo {
+        font-size: 15rem;
+    }
+
+    .Demo , .Repositorio {
+        font-size: 14rem;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .Demo , .Repositorio {
+        margin: 0 !important
+    }
+
+    .Contenedor {
+        min-width: 360rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .titulo {
+        font-size: 19rem;
+    }
+
+    .subtitulo {
+        font-size: 17rem;
+    }
+
+    .Demo, .Repositorio {
+        font-size: 14rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .titulo {
+        font-size: 21rem;
+    }
+
+    .subtitulo {
+        font-size: 19rem;
+    }
+
+    .Demo , .Repositorio {
+        font-size: 17rem;
+        margin: 0;
+    }
+}
