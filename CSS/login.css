@@ -1,0 +1,55 @@
+
+.Login {
+    background-color: #f5f5f5;
+}
+.Login .Contenedor{
+    background-color: #f5f5f5;
+    padding: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login .Contenedor .Formulario{
+    margin-bottom: 50rem;
+}
+.Login .Contenedor .Formulario h2{
+    text-align: center;
+}
+
+.Login .Contenedor .Formulario .Formulario__Input{
+    margin-bottom: 15rem;
+}
+
+.Login .Contenedor .Formulario .Formulario__Button{
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (min-width:0px) {    
+    
+    .Login .Contenedor .Formulario{
+        margin-bottom: 150rem;
+        width: 80%;
+    }
+        .Login .Contenedor .Formulario .Formulario__Input input{
+            height: 40rem;
+        }
+    }
+@media screen and (min-width:800px) {    
+    
+    .Login .Contenedor .Formulario{
+        margin-bottom: 100rem;
+        width: 55%;
+    }
+}
+
+@media screen and (min-width:1024px) {   
+    .Login .Contenedor .Formulario{
+        margin-bottom: 50rem;
+        width: 40%;
+    } 
+    .Login .Contenedor .Formulario .Formulario__Input input{
+        height: 45rem;
+    }
+}

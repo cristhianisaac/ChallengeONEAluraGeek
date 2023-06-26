@@ -1,0 +1,65 @@
+
+#descripcion{
+    height: 125rem;
+}
+
+
+.Producto {
+    background-color: #f5f5f5;
+}
+.Producto .Contenedor{
+    background-color: #f5f5f5;
+    padding: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Producto .Contenedor .Formulario{
+    margin-bottom: 50rem;
+}
+
+.Producto .Contenedor .Formulario .Formulario__Input{
+    margin-bottom: 15rem;
+}
+.Producto .Contenedor .Formulario .Formulario__Input input{
+    height: 40rem;
+}
+
+.Producto .Contenedor .Formulario .Formulario__Button{
+    width: 50%;
+}
+
+@media screen and (min-width:0px) {    
+    
+    .Producto .Contenedor .Formulario{
+        margin-bottom: 50rem;
+        width: 95%;
+    }
+    
+    .Producto {
+        margin: 0;
+        padding: 0;
+    }
+    .Producto .Contenedor{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width:800px) {    
+    
+    .Producto .Contenedor .Formulario{
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width:1024px) {   
+
+    .Producto .Contenedor{
+        margin-top: 50rem;
+    }
+    .Producto .Contenedor .Formulario{
+        width: 70%;
+    } 
+}

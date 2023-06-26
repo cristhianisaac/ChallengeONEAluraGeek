@@ -3,6 +3,7 @@
     position: sticky;
     top: 0;
     background-color: #fff;
+    z-index: 2;
 }
 .Header .Contenedor .Nombre_Buscar{
     margin: 15rem 0 15rem 0;
@@ -96,6 +97,12 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+  }
+
+  .Buscar__icon__submit {
+    width: 33px;
+    height: 35px;
+    background-color: rgba(62, 130, 247, 0);
   }
   
   .Buscar__submit::before {
@@ -216,24 +223,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 22rem;
+        font-size: 24rem;
     }
 
-    .Header .Contenedor .Nombre_Buscar .Nombre {
-        font-size: 18rem;
+    .Header .Contenedor .Nombre_Buscar .Nombre{
+      margin-right: 25rem;
     }
     .Header .Contenedor .Nombre_Buscar .Buscar{
-        font-size: 14rem;
         display: none;
     }
 
     .serch-only{
       display: block;
-    }
-}
-@media (max-width:500px) {
-    .Header .Contenedor .Nombre_Buscar .Nombre {
-        font-size: 16rem !important
     }
 }
 
@@ -243,14 +244,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 25rem;
-    }
-    .Header .Contenedor .Nombre_Buscar .Nombre {
-        font-size: 21rem;
+        font-size: 26rem;
     }
     .Header .Contenedor .Nombre_Buscar .Buscar{
       width: 275rem;
       display: block;
+      font-size: 17rem;
     }
     .serch-only{
       display: none;
@@ -265,12 +264,7 @@
         justify-content: space-between;
         font-size: 28rem;
     }
-
-    .Header .Contenedor .Nombre_Buscar .Nombre {
-        font-size: 24rem;
-    }
     .Header .Contenedor .Nombre_Buscar .Buscar{
-        font-size: 17rem;
       width: 393rem;
     }
 }

@@ -17,6 +17,8 @@
   
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/contacto.css">
+  <link rel="stylesheet" href="CSS/formulario.css">
+  <link rel="stylesheet" href="CSS/login.css">
 
 </head>
 
@@ -25,7 +27,7 @@
     <section class="Header">
       <div class="Contenedor">
         <div class="Nombre_Buscar">
-          <a href="#top" class="Nombre">
+          <a href="index.html" class="Nombre">
             <i class="fa-solid fa-gamepad Azul"></i>
             <b class="Azul">Alura</b><b>Geek</b>
           </a>
@@ -43,13 +45,30 @@
               </button>
             </div>
         </div>
-        <a class="Repositorio" target="_blank">Login</a>
         <div class="serch-only">
           <button type="submit" title="Buscar." class="Buscar__submit">
             <svg role="img" aria-label="Search">
               <use xlink:href="#sbx-icon-search-8"></use>
             </svg>
           </button>
+        </div>
+      </div>
+    </section>
+    <section class="Login">
+      <div class="Contenedor">
+        <div class="Formulario">
+          <h2>Iniciar Sesión</h2>
+          <label for="user" class="Formulario__Input">
+            <input type="text" id="user" placeholder="&nbsp;" />
+            <span class="Formulario__Label">Usuario</span>
+            <span class="Formulario__Focus-BG"></span>
+          </label>
+          <label for="password" class="Formulario__Input">
+            <input type="password" id="password" placeholder="&nbsp;" />
+            <span class="Formulario__Label">Contraseña</span>
+            <span class="Formulario__Focus-BG"></span>
+          </label>
+          <button class="Formulario__Button Demo" onclick="location.href='restock.html';">Entrar</button>
         </div>
       </div>
     </section>
@@ -69,19 +88,19 @@
             <li class="Contacto__Menu_Lista__Item"><a>Anunciate con nosotros</a></li>
           </ul>
         </div>
-        <div class="Contacto__Formulario">
+        <div class="Formulario">
           <h2>Hable con Nosotros</h2>
-          <label for="nom" class="Contacto__Formulario__Input">
+          <label for="nom" class="Formulario__Input">
             <input type="text" id="nom" placeholder="&nbsp;" />
-            <span class="Contacto__Formulario__Label">Nombre</span>
-            <span class="Contacto__Formulario__Focus-BG"></span>
+            <span class="Formulario__Label">Nombre</span>
+            <span class="Formulario__Focus-BG"></span>
           </label>
-          <label for="mensaje" class="Contacto__Formulario__Input">
+          <label for="mensaje" class="Formulario__Input">
             <input type="text" id="mensaje" placeholder="&nbsp;" />
-            <span class="Contacto__Formulario__Label">Mensaje</span>
-            <span class="Contacto__Formulario__Focus-BG"></span>
+            <span class="Formulario__Label">Mensaje</span>
+            <span class="Formulario__Focus-BG"></span>
           </label>
-          <button class="Demo">Enviar Mensaje</button>
+          <button class="Formulario__Button Demo">Enviar Mensaje</button>
         </div>
       </div>
     </section>
