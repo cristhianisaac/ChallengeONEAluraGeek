@@ -1,0 +1,72 @@
+
+.Categorias .Contenedor .Categoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Categorias .Contenedor .Categoria .Categoria__Titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+.Categorias .Contenedor .Categoria .Categoria__Titulo h1{
+    color: #464646;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.Categorias .Contenedor .Categoria .Categoria__Titulo a{
+    color: #2A7AE4;
+    font-weight: bold;
+    width: 100rem;
+}
+
+.Categorias .Contenedor .Categoria .Categoria__Productos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 252px;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:0px) {
+    .Categorias .Contenedor .Categoria .Categoria__Titulo h1{
+        font-size: 22rem;
+        line-height: 22rem;
+    }
+    
+    .Categorias .Contenedor .Categoria .Categoria__Titulo a{
+        font-size: 14rem;
+    }
+    
+    .Categorias .Contenedor .Categoria .Categoria__Productos{
+        height: 249rem;
+    }
+}
+@media screen and (min-width:720px) {
+    .Categorias .Contenedor .Categoria {
+        min-width: 704rem;
+        height: 358rem;
+    }
+    .Categorias .Contenedor .Categoria .Categoria__Titulo a{
+        font-size: 16rem;
+    }
+    
+    .Categorias .Contenedor .Categoria .Categoria__Productos{
+        height: 252rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .Categorias .Contenedor .Categoria {
+        height: 306rem;
+        margin-bottom: 60rem;
+    }
+    .Categorias .Contenedor .Categoria .Categoria__Titulo h1{
+        font-size: 32rem;
+        line-height: 32rem;
+    }
+}

@@ -35,7 +35,10 @@ a:visited {
 }
 
 .Azul {
-    color: #2A7AE4;
+    color: #2A7AE4 !important;
+}
+.Gray {
+    color: #464646 !important;
 }
 
 .principal {
@@ -45,10 +48,9 @@ a:visited {
 
 .Header,
 .Login,
-.Producto,
+.Stock,
 .Banner,
-.Banner,
-.Escuelas,
+.Categorias,
 .Experiencias,
 .Contacto {
     display: flex;
@@ -72,6 +74,7 @@ a:visited {
 
     .Contenedor {
         width: 90%;
+        min-width: 328rem;
     }
 
     h1,
@@ -103,6 +106,7 @@ a:visited {
 
     .Contenedor {
         width: 95%;
+        min-width: 704rem;
     }
 
     h1,
@@ -134,7 +138,7 @@ a:visited {
 
     .Contenedor {
         width: 70%;
-        min-width: 1040rem;
+        min-width: 1133rem;
     }
 
     h1,
@@ -161,8 +165,6 @@ a:visited {
     }
 }
 
-.Producto,
-.Escuelas,
 .Contacto {
     background-color: #eaf2fd;
 }
@@ -235,16 +237,17 @@ a:visited {
     padding: 10rem 0 10rem 0;
     line-height: 18rem;
 }
-
+.titulo {
+    font-weight: bold;
+}
 @media (min-width:0px) {
 
-
     .titulo {
-        font-size: 17rem;
+        font-size: 16rem;
     }
 
     .subtitulo {
-        font-size: 15rem;
+        font-size: 14rem;
     }
 
     .Demo,
@@ -263,17 +266,10 @@ a:visited {
     .Contenedor {
         min-width: 360rem;
     }
+
 }
 
 @media screen and (min-width:800px) {
-
-    .titulo {
-        font-size: 19rem;
-    }
-
-    .subtitulo {
-        font-size: 17rem;
-    }
     .Demo,
     .Repositorio {
         font-size: 16rem;
@@ -281,13 +277,5 @@ a:visited {
 }
 
 @media screen and (min-width:1024px) {
-
-    .titulo {
-        font-size: 21rem;
-    }
-
-    .subtitulo {
-        font-size: 19rem;
-    }
 
 }

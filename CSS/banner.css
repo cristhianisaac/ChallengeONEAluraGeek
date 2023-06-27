@@ -1,8 +1,9 @@
 .Banner{
-    background-image: url(../IMG/banner.webp);
-    background-size: cover ;
-    background-position: center;
-    background-color: grey;
+    background-image: url(../IMG/banner_3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(161, 161, 161);
     background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
