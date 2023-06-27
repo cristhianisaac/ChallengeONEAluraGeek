@@ -1,0 +1,55 @@
+.Banner{
+    background-image: url(../IMG/banner.webp);
+    background-size: cover ;
+    background-position: center;
+    background-color: grey;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Banner .Contenedor{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    bottom:0px;
+    color: #fff;
+}
+.Banner .Contenedor .Formulario__Button{
+    width: 200rem;
+}
+
+.Banner .Contenedor h1{
+    margin: 0;
+}
+.Banner .Contenedor h3{
+    margin: 0;
+}
+
+@media screen and (min-width:0px) {
+    .Banner{
+        height: 200rem;
+    }
+    .Banner .Contenedor h1{
+        font-size: 22rem;
+    }
+    .Banner .Contenedor h3{
+        font-size: 14rem;
+    }
+}
+@media screen and (min-width:800px) {
+    
+}
+
+@media screen and (min-width:1024px) {
+    .Banner{
+        height: 360rem;
+    }
+    .Banner .Contenedor h1{
+        font-size: 52rem;
+    }
+    .Banner .Contenedor h3{
+        font-size: 22rem;
+    }
+}

@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;
     user-select: none;
-   font-size: 1px;/*for using REM units*/
+    font-size: 1px;
+    /*for using REM units*/
 }
 
 * {
@@ -11,7 +12,7 @@ html {
 body {
     background-color: #fff;
     color: #464646;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -21,28 +22,32 @@ ul {
 
 a {
     cursor: pointer;
-    text-align:center;
+    text-align: center;
 }
 
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
+}
+a:visited {
     color: #464646;
 }
 
-.Azul{
+.Azul {
     color: #2A7AE4;
 }
-.principal{
-margin:0;
-padding: 0;
+
+.principal {
+    margin: 0;
+    padding: 0;
 }
+
 .Header,
 .Login,
 .Producto,
-.Skills-Hobbies,
-.Skills-Hobbies,
+.Banner,
+.Banner,
 .Escuelas,
 .Experiencias,
 .Contacto {
@@ -52,6 +57,7 @@ padding: 0;
     width: 100%;
     padding-top: 25rem;
 }
+
 .Header {
     display: flex;
     flex-direction: column;
@@ -87,7 +93,7 @@ padding: 0;
     }
 
     h2 {
-        font-size: 22rem;
+        font-size: 16rem;
         font-weight: bolder;
     }
 }
@@ -118,7 +124,7 @@ padding: 0;
     }
 
     h2 {
-        font-size: 25rem;
+        font-size: 16rem;
         font-weight: bolder;
     }
 }
@@ -146,11 +152,11 @@ padding: 0;
         margin-block-end: 4rem;
         padding-bottom: 10rem;
         line-height: 30rem;
-        font-size: 20rem;
+        font-size: 16rem;
     }
 
     h2 {
-        font-size: 28rem;
+        font-size: 16rem;
         font-weight: bolder;
     }
 }
@@ -172,11 +178,14 @@ padding: 0;
     padding: 7rem 15rem;
     text-decoration: none;
     min-width: 100rem;
-    font-weight: bold;
+    font-weight: 550;
+    font-size: 16rem;
 }
-.Demo:visited{
-    color: #ffffff;   
+
+.Demo:visited {
+    color: #ffffff;
 }
+
 .Demo:hover {
     background-color: #ffffff;
     color: #2A7AE4;
@@ -197,12 +206,14 @@ padding: 0;
     padding: 7rem 15rem;
     text-decoration: none;
     min-width: 100rem;
-    font-weight: bold;
+    font-weight: 550;
+    font-size: 16rem;
+}
 
+.Repositorio:visited {
+    color: #2A7AE4;
 }
-.Repositorio:visited{
-    color: #2A7AE4;   
-}
+
 .Repositorio:hover {
     background-color: #2A7AE4;
     color: #ffffff;
@@ -236,16 +247,17 @@ padding: 0;
         font-size: 15rem;
     }
 
-    .Demo , .Repositorio {
-        font-size: 13rem;
+    .Demo,
+    .Repositorio {
+        font-size: 14rem;
     }
-
 }
 
 @media (max-width:500px) {
 
-    .Demo , .Repositorio {
-        margin: 0 !important
+    .Demo,
+    .Repositorio {
+        margin: 0 !important;
     }
 
     .Contenedor {
@@ -262,9 +274,9 @@ padding: 0;
     .subtitulo {
         font-size: 17rem;
     }
-
-    .Demo, .Repositorio {
-        font-size: 15rem;
+    .Demo,
+    .Repositorio {
+        font-size: 16rem;
     }
 }
 
@@ -278,8 +290,4 @@ padding: 0;
         font-size: 19rem;
     }
 
-    .Demo , .Repositorio {
-        font-size: 17rem;
-        margin: 0;
-    }
 }

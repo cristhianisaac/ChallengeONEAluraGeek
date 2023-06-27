@@ -48,7 +48,7 @@
 
     .Contacto .Contenedor .Contacto__Menu .Contacto__Menu__Lista .Contacto__Menu_Lista__Item{
         margin-bottom: 15rem;
-        font-size: 17rem;
+        font-size: 16rem;
         text-align: center;
     }
 }
@@ -85,7 +85,6 @@
     .Contacto .Contenedor .Contacto__Menu .Contacto__Menu__Lista .Contacto__Menu_Lista__Item{
         margin-top: 45rem;
         margin-bottom: 0rem;
-        font-size: 17rem;
         text-align: justify;
     }
     .Contacto .Contenedor .Formulario h2 {
@@ -124,6 +123,5 @@
     .Contacto .Contenedor .Contacto__Menu .Contacto__Menu__Lista .Contacto__Menu_Lista__Item{
         margin-top: 15rem;
         margin-bottom: 35rem;
-        font-size: 20rem;
     }
 }
