@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
     user-select: none;
     font-size: 1px;
-    /*for using REM units*/
 }
 
 * {
@@ -73,7 +72,7 @@ a:visited {
 
 
     .Contenedor {
-        width: 90%;
+        width: 95%;
         min-width: 328rem;
     }
 
@@ -138,7 +137,7 @@ a:visited {
 
     .Contenedor {
         width: 70%;
-        min-width: 1133rem;
+        width: 1133rem;
     }
 
     h1,

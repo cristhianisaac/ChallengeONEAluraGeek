@@ -236,6 +236,10 @@
     .serch-only{
       display: block;
     }
+    .serch-only button{
+      margin-right: 25px;
+    }
+
 }
 
 @media screen and (min-width:800px) {

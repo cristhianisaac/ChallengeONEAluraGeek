@@ -20,10 +20,7 @@
 }
 
 .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 @media screen and (min-width:0px) {
@@ -41,6 +38,8 @@
     
     .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
         height: 249rem;
+        grid-template-columns: repeat(auto-fill, 156rem);
+        justify-content: space-around; 
     }
     .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo button{
         width: 250rem;
@@ -77,6 +76,8 @@
     
     .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
         height: 252rem;
+        grid-template-columns: repeat(auto-fill, 164rem);
+        justify-content: space-between; 
     }
 }
 
@@ -101,9 +102,13 @@
         line-height: 32rem;
     }
 
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
+        grid-template-columns: repeat(auto-fill, 176rem);
+    }
     
     .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos .Producto{
         margin-bottom: 50px;
+        
     }
     .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo button{
         width: 200rem;
