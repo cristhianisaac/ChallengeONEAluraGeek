@@ -1,0 +1,111 @@
+
+.Productos .Contenedor .Productos__Lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+.Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo h1{
+    color: #464646;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:0px) {
+    .Productos .Contenedor{
+        height: 2550rem;
+    }
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo h1{
+        font-size: 22rem;
+        line-height: 22rem;
+    }
+    
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo a{
+        font-size: 14rem;
+    }
+    
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
+        height: 249rem;
+    }
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo button{
+        width: 250rem;
+    }
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos .Producto{
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width:535px) {
+    
+    .Productos .Contenedor{
+        height: 1700rem;
+    }
+}
+@media screen and (min-width:709px) {
+    
+    .Productos .Contenedor{
+        height: 1450rem;
+    }
+}
+@media screen and (min-width:720px) {
+    
+.Productos .Contenedor{
+    height: 1500rem;
+}
+    .Productos .Contenedor .Productos__Lista {
+        min-width: 704rem;
+        height: 358rem;
+    }
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo a{
+        font-size: 16rem;
+    }
+    
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos{
+        height: 252rem;
+    }
+}
+
+@media screen and (min-width:879px) {
+    
+    .Productos .Contenedor{
+        height: 1200rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    
+.Productos .Contenedor{
+    height: 942rem;
+}
+
+    .Productos .Contenedor .Productos__Lista {
+        height: 306rem;
+        margin-bottom: 60rem;
+    }
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo h1{
+        font-size: 32rem;
+        line-height: 32rem;
+    }
+
+    
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Productos .Producto{
+        margin-bottom: 50px;
+    }
+    .Productos .Contenedor .Productos__Lista .Productos__Lista__Titulo button{
+        width: 200rem;
+    }
+}

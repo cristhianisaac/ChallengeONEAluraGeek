@@ -51,7 +51,7 @@ a:visited {
 .Stock,
 .Banner,
 .Categorias,
-.Experiencias,
+.Productos,
 .Contacto {
     display: flex;
     flex-direction: column;
