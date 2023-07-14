@@ -59,16 +59,16 @@
         <div class="Formulario">
           <h2>Iniciar Sesión</h2>
           <label for="user" class="Formulario__Input">
-            <input type="text" id="user" placeholder="&nbsp;" />
+            <input type="text" id="user" placeholder="&nbsp;" required/>
             <span class="Formulario__Label">Usuario</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
           <label for="password" class="Formulario__Input">
-            <input type="password" id="password" placeholder="&nbsp;" />
+            <input type="password" id="password" placeholder="&nbsp;" required/>
             <span class="Formulario__Label">Contraseña</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
-          <button class="Formulario__Button Demo" onclick="location.href='index.html';">Entrar</button>
+          <button class="Formulario__Button Demo" onclick="location.href='administrador.html';">Entrar</button>
         </div>
       </div>
     </section>
@@ -90,13 +90,13 @@
         </div>
         <div class="Formulario">
           <h2>Hable con Nosotros</h2>
-          <label for="nom" class="Formulario__Input">
-            <input type="text" id="nom" placeholder="&nbsp;" />
+          <label for="nombre" class="Formulario__Input">
+            <input type="text" id="nombre" required placeholder="&nbsp;" />
             <span class="Formulario__Label">Nombre</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
           <label for="mensaje" class="Formulario__Input">
-            <input type="text" id="mensaje" placeholder="&nbsp;" />
+            <input type="text" id="mensaje"  required placeholder="&nbsp;" />
             <span class="Formulario__Label">Mensaje</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
@@ -115,6 +115,7 @@
   <script src="SWEETALERT/sweetalert2.min.js"></script>
   <script src="https://kit.fontawesome.com/bacd1a7eb3.js" crossorigin="anonymous"></script>  
   <link rel="stylesheet" href="SWEETALERT/bulma.css">
+  <script type="text/javascript" src="JS/forms.js"></script>
 
   
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">

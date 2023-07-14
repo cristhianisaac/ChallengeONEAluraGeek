@@ -10,6 +10,7 @@
     position: relative;
     margin: auto;
     width: 100%;
+    margin-left: 5%;
     border-radius: 7.5rem;
     overflow: hidden;
     font-size: 12rem;
@@ -42,7 +43,7 @@
 .Formulario__Input input {
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
+    width: 90%;
     border: 0;
     padding: 16rem 12rem 0 12rem;
     height: 40rem;
@@ -86,3 +87,17 @@
 .Formulario__Button{
     padding: 16px 31px;
 }
+
+.Formulario__Input__Invalid {
+    margin-bottom: 0.5rem;
+  }
+    
+  .Formulario__Input__Invalid input {
+      border: 1px solid rgb(170, 0, 0);
+      border-radius: 7px;
+  }
+  
+  .Formulario__Input__Invalid .Formulario__Label {
+      color: darkred;
+      font-weight: bold;
+  }

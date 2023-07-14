@@ -36,6 +36,9 @@ a:visited {
 .Azul {
     color: #2A7AE4 !important;
 }
+.Rojo {
+    color:  rgb(170, 0, 0) !important;
+}
 .Gray {
     color: #464646 !important;
 }
