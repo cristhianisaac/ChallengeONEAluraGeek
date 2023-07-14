@@ -20,12 +20,12 @@ export const MostrarCategorias = () => {
                 <div class="Categoria__Productos"> </div>`;
             categoria.innerHTML = contenido;
 
-            clientServicesProductos.listaProductos().then(data => {
+            clientServicesProductos.listaProductosCategoria(desc).then(data => {
                 data.forEach(({ name, price, imageUrl, category, imageDescription, description, id }) => {
-                    if (category === desc) {
+                    
                         const nuevoProducto = MostrarProductos(name, price, imageUrl, category, imageDescription, description, id);
                         categoria.lastChild.appendChild(nuevoProducto);
-                    }
+                    
                 });
             });
             

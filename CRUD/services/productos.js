@@ -1,6 +1,8 @@
 //Conexion
 const listaProductos = () => fetch('http://localhost:3000/products').then(respuesta => respuesta.json()).catch(error => console.log(error));
 
+const listaProductosCategoria = (caegory) =>fetch(`http://localhost:3000/products?category=${caegory}`).then(respuesta => respuesta.json()).catch(error => console.log(error));
+
 const crearProducto = (name, price, imageUrl, category, imageDescription, description) => {
   return fetch('http://localhost:3000/products', {
     method: "POST",
@@ -34,6 +36,7 @@ const actualizarProducto = (name, price, imageUrl, id, category, imageDescriptio
 
 export const clientServicesProductos = {
   listaProductos,
+  listaProductosCategoria,
   detalleProducto,
   crearProducto,
   actualizarProducto,
