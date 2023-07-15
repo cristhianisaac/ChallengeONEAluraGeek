@@ -7,8 +7,9 @@ button.addEventListener("click", login);
 function login(){
   let user = document.getElementById('user');
   let password = document.getElementById('password');
-  let name = iniciaSesion(user.value, password.value);
-  if(name === undefined || name === ""){    
+  iniciaSesion(user.value, password.value);
+  let name = getCookie('user');
+  if(name === undefined || name === ""){
     eraseCookie('user');
     Swal.fire({
       title: 'Error',
@@ -21,7 +22,6 @@ function login(){
     });
   }
   else{
-    setCookie('user',name,1);
     location.href='administrador.html';
   }
 }
