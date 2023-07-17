@@ -5,8 +5,7 @@ export const MostrarProductos = (name, price, imageUrl, category, imageDescripti
     cardProducto.className = "Producto";
     const contenido = `      
       <img src="${imageUrl}" alt="${imageDescription}" /><label
-                class="subtitulo">${name}</label><label class="titulo">$${price}</label><a href="../../producto.html?id=${id}" class="Azul">Ver
-                producto</a>
+                class="titulo">${name}</label><label class="subtitulo">$${price}</label><a href="../../producto.html?id=${id}" class="Azul">Ver producto <i class="fa-solid fa-arrow-right"></i></a>
     `
     cardProducto.innerHTML = contenido;
     cardProducto.dataset.id = id;

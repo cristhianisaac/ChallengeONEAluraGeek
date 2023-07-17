@@ -27,9 +27,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    overflow: hidden;
-    height: 252px;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
 }
 
 @media screen and (min-width:0px) {
@@ -43,20 +41,20 @@
     }
     
     .Categorias .Contenedor .Categoria .Categoria__Productos{
-        height: 249rem;
+        height: 290rem;
     }
 }
 @media screen and (min-width:720px) {
     .Categorias .Contenedor .Categoria {
         min-width: 704rem;
-        height: 358rem;
+        margin-bottom: 60rem;
     }
     .Categorias .Contenedor .Categoria .Categoria__Titulo a{
         font-size: 16rem;
     }
     
     .Categorias .Contenedor .Categoria .Categoria__Productos{
-        height: 252rem;
+        height: 300px;
     }
 }
 

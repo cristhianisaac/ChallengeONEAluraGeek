@@ -30,6 +30,37 @@
     width: 50%;
 }
 
+
+.Upload__Image {
+    padding:20px 0;
+    background:#fff;
+  }
+  .Upload__Image input {
+    display:none;
+  
+  }
+  .Upload__Image label {
+    display:block;
+    width:45%;
+    height:45px;
+    margin-left: 25% !important;
+    line-height:50px;
+    text-align:center;
+    cursor:pointer;
+  }
+  
+  .Upload__Image img {
+    width:60%;
+    margin: 0 20%;
+    border-radius: 5rem;
+    display:none;  
+    margin-bottom:30px;
+  }
+  #Descripcion{
+    text-overflow:initial;
+    white-space:break-spaces;
+  }
+
 @media screen and (min-width:0px) {    
     
     .Stock .Contenedor .Formulario{

@@ -48,8 +48,7 @@ const handleElementAdded = (mutationsList, observer) => {
                             },
                             hideClass: {
                                 popup: 'animate__animated animate__fadeOutUp'
-                            },
-                            animation: true
+                            }
                         }).then((result) => {
                             /* Read more about isConfirmed, isDenied below */
                             if (result.isConfirmed) {

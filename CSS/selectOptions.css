@@ -1,0 +1,95 @@
+.square {
+    width: .7em;
+    height: .7em;
+    margin: .5em;
+    display: inline-block;
+}
+
+
+.categoria .Formulario__Label {
+    color: rgba(10, 10, 10 0.5);
+    font-weight: normal;
+    transform: translate3d(0, -12rem, 0) scale(0.75);
+}
+
+.categoria select {
+    padding-top: 27rem;
+    height: 67rem;
+    color: #0077ff;
+    outline: 0px;
+}
+
+.categoria select:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    border-top: 5px solid #aaa;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.categoria select:active,
+.categoria select:focus {
+    outline: 0px;
+}
+
+.categoria select option {
+    padding-top: 27rem;
+    height: 67rem;
+    outline: 0px;
+    padding: 30px;
+}
+
+.categoria {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.categoria::before,
+.categoria::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.categoria::after {
+    /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.2em;
+    top: 50%;
+    margin-top: -.5em;
+}
+
+.categoria::before {
+    /*  Custom dropdown arrow cover */
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
+    height: 67rem;
+}
+
+.categoria select[disabled] {
+    color: rgba(0, 0, 0, .3);
+}
+
+.categoria select[disabled]::after {
+    color: rgba(0, 0, 0, .1);
+}
+
+.categoria::before {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.categoria::after {
+    color: rgba(0, 0, 0, .4);
+}

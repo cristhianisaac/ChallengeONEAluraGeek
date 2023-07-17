@@ -73,7 +73,11 @@ const handleElementAdded = (mutationsList, observer) => {
                     const queryString = window.location.search;
                     const urlParams = new URLSearchParams(queryString);
                     urlParams.delete("category");
-                    removeParam("category")
+                    removeParam("category");
+                    const productoElement = targetElement.parentElement.firstChild;
+                    if (productoElement) {
+                        productoElement.innerHTML = "Todos los productos";
+                    }
                     targetElement.remove();
                 });
                 observer.disconnect();
@@ -84,23 +88,21 @@ const handleElementAdded = (mutationsList, observer) => {
 const observer = new MutationObserver(handleElementAdded);
 observer.observe(document.body, { childList: true, subtree: true });
 
-function removeParam(parameter)
-{
-  var url=document.location.href;
-  var urlparts= url.split('?');
+function removeParam(parameter) {
+    var url = document.location.href;
+    var urlparts = url.split('?');
 
- if (urlparts.length>=2)
- {
-  var urlBase=urlparts.shift(); 
-  var queryString=urlparts.join("?"); 
+    if (urlparts.length >= 2) {
+        var urlBase = urlparts.shift();
+        var queryString = urlparts.join("?");
 
-  var prefix = encodeURIComponent(parameter)+'=';
-  var pars = queryString.split(/[&;]/g);
-  for (var i= pars.length; i-->0;)               
-      if (pars[i].lastIndexOf(prefix, 0)!==-1)   
-          pars.splice(i, 1);
-  url = urlBase+'?'+pars.join('&');
-  window.history.pushState('',document.title,url); // added this line to push the new url directly to url bar .
+        var prefix = encodeURIComponent(parameter) + '=';
+        var pars = queryString.split(/[&;]/g);
+        for (var i = pars.length; i-- > 0;)
+            if (pars[i].lastIndexOf(prefix, 0) !== -1)
+                pars.splice(i, 1);
+        url = urlBase + '?' + pars.join('&');
+        window.history.pushState('', document.title, url); // added this line to push the new url directly to url bar .
 
-}
+    }
 }

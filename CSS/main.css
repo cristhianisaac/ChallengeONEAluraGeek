@@ -272,6 +272,9 @@ a:visited {
 .titulo {
     font-weight: bold;
 }
+.subtitulo {
+    font-weight:500;
+}
 @media (min-width:0px) {
 
     .titulo {
@@ -309,5 +312,11 @@ a:visited {
 }
 
 @media screen and (min-width:1024px) {
+    .titulo {
+        font-size: 17rem;
+    }
 
+    .subtitulo {
+        font-size: 15rem;
+    }
 }

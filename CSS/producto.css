@@ -1,12 +1,28 @@
 .Producto {
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: all .2s linear;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.Producto:hover{
+    box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+    transform: scale(1.02);
+}
+
+.Producto:hover img{
+  transform: scale(1.1);
+  transform-origin:  bottom;
+  transition: all .2s ease-in-out;
 }
 
 .Producto a {
-    font-size: 16rem;
-    font-weight: bold;
+    font-size: 14rem;
     text-align: justify;
+    padding: 3rem 10rem;
 }
 
 .Producto img {
@@ -14,30 +30,33 @@
 }
 
 .Producto label {
-    padding: 5rem 0 5rem 0;
+    padding: 3rem 10rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media screen and (min-width:0px) {
     .Producto {
         width: 156rem;
-        height: 249rem;
+        height: 257rem;
     }
 
     .Producto img {
         width: 156rem;
-        height: 174rem;
+        height: 163rem;
     }
 }
 
 @media screen and (min-width:720px) {
     .Producto {
         width: 164rem;
-        height: 252rem;
+        height: 260rem;
     }
 
     .Producto img {
         width: 164rem;
-        height: 174rem;
+        height: 170rem;
     }
 }
 

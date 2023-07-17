@@ -14,8 +14,10 @@ function valida(input){
 
   if(input.validity.valid){
     input.parentElement.classList.remove("Formulario__Input__Invalid");
+    input.parentElement.classList.add("Formulario__Input__Valid");
   }else{
     input.parentElement.classList.add("Formulario__Input__Invalid");
+    input.parentElement.classList.remove("Formulario__Input__Valid");
   }
 }
 
