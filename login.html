@@ -19,14 +19,9 @@
   <link rel="stylesheet" href="CSS/formulario.css"> 
   <link rel="stylesheet" href="CSS/login.css">
 
-  <link rel="stylesheet" href="SWEETALERT/sweetalert2.css">
-  <link rel="stylesheet" href="SWEETALERT/bulma.css">
-  <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/bacd1a7eb3.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="JS/Funciones.js"></script>
-  <script type="text/javascript" src="JS/forms.js"></script>
+  <link rel="stylesheet" href="SWEETALERT/sweetalert2.css">  
+  <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>  
+  
 </head>
 
 <body>
@@ -35,8 +30,8 @@
       <div class="Contenedor">
         <div class="Nombre_Buscar">
           <a href="index.html" class="Nombre">
-            <i class="fa-solid fa-gamepad Azul"></i>
-            <b class="Azul">Alura</b><b>Geek</b>
+            
+            <b class="Azul"><i class="fa-solid fa-gamepad"></i>Alura</b><b>Geek</b>
           </a>
             <div role="search" class="Buscar">
               <input id="search" type="search" name="search" placeholder="¿Qué deseas buscar?" autocomplete="off" required="required" class="Buscar__input" spellcheck="false" data-ms-editor="true">
@@ -64,7 +59,7 @@
     <section class="Login">
       <div class="Contenedor">
         <div class="Formulario">
-          <h2>Iniciar Sesión</h2>
+          <h1 style="text-align: center; font-size: 28rem;">Iniciar Sesión</h1>
           <label for="user" class="Formulario__Input">
             <input type="text" id="user" placeholder="&nbsp;" required/>
             <span class="Formulario__Label">Usuario</span>
@@ -75,16 +70,16 @@
             <span class="Formulario__Label">Contraseña</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
-          <button class="Formulario__Button Demo" id="login">Entrar</button>
-        </div>
+          <button class="Formulario__Button botonAzul" id="login">Entrar</button>
+        </dic>
       </div>
     </section>
     <section class="Contacto" id="Contacto">
       <div class="Contenedor">
         <div class="Contacto__Menu">
           <label class="Nombre">
-            <i class="fa-solid fa-gamepad Azul"></i>
-            <b class="Azul">Alura</b><b>Geek</b>
+            
+            <b class="Azul"><i class="fa-solid fa-gamepad"></i>Alura</b><b>Geek</b>
           </label>
           <ul class="Contacto__Menu__Lista">
             <li class="Contacto__Menu_Lista__Item"><a>Quienes somos</a></li>
@@ -95,7 +90,7 @@
             <li class="Contacto__Menu_Lista__Item"><a>Anunciate con nosotros</a></li>
           </ul>
         </div>
-        <div class="Formulario">
+        <form class="Formulario">
           <h2>Hable con Nosotros</h2>
           <label for="nombre" class="Formulario__Input">
             <input type="text" id="nombre" required placeholder="&nbsp;" />
@@ -107,8 +102,8 @@
             <span class="Formulario__Label">Mensaje</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
-          <button class="Formulario__Button Demo">Enviar Mensaje</button>
-        </div>
+          <button class="Formulario__Button botonAzul">Enviar Mensaje</button>
+        </form>
       </div>
     </section>
   </main>
@@ -125,7 +120,12 @@
     </symbol>
   </svg>
   
-  <script src="JS/acceso.js" type="module"></script>
+  <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/bacd1a7eb3.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="JS/Funciones.js"></script>
+  <script type="text/javascript" src="JS/forms.js"></script>
+  <script src="JS/acceso.js" type="module" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,72 @@
+.Producto .modificaciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem 0 15rem 0;
+}
+
+.Producto .modificaciones .Modificar {
+    border-radius: 5rem;
+    border: 1rem solid #246ad4;
+    display: inline-block;
+    cursor: pointer;
+    padding: 3rem 5rem;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 16rem;
+    width: 80rem;
+    min-width: 80rem;
+    max-width: 80rem;
+    text-align: center;
+
+    background-color: #ffffff;
+    color: #2A7AE4;
+}
+
+.Producto .modificaciones .Modificar:visited {
+    color: #ffffff !important;
+}
+
+.Producto .modificaciones .Modificar:hover {
+    background-color: #2A7AE4;
+    color: #ffffff;
+}
+
+.Producto .modificaciones .Modificar:active {
+    position: relative;
+    top: 1rem;
+}
+
+
+.Producto .modificaciones .Eliminar {
+    border-radius: 5rem;
+    border: 1rem solid rgb(170, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+    padding: 3rem 5rem;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 16rem;
+    text-align: center;
+    width: 80rem;
+    min-width: 80rem;
+    max-width: 80rem;
+
+    
+    background-color: #ffffff;
+    color: darkred;
+}
+
+.Producto .modificaciones .Eliminar:visited {
+    color: darkred;
+}
+
+.Producto .modificaciones .Eliminar:hover {
+    background-color: darkred;
+    color: #ffffff;
+}
+
+.Producto .modificaciones .Eliminar:active {
+    position: relative;
+    top: 1rem;
+}

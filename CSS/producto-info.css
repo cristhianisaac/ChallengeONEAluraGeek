@@ -1,0 +1,82 @@
+.Info .Contenedor .Info__Content{
+    display: flex;
+    justify-content: center;    
+}
+    .Info .Contenedor .Info__Content h1,
+    .Info .Contenedor .Info__Content h2,
+    .Info .Contenedor .Info__Content h3,
+    .Info .Contenedor .Info__Content h4 {
+        margin-block-end: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 15rem;
+        line-height: 5rem;
+        width: 100%;
+    }
+
+    .Info .Contenedor .Info__Content p{
+        width: 100%;
+    }
+
+    .Info .Contenedor .Info__Content .Info__Content__Data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;   
+        align-items: center; 
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;   
+        align-items: center; 
+    }
+
+@media screen and (min-width:0px) {
+    .Categorias .Contenedor .Categoria{
+        margin-bottom: 50rem;
+    }
+    .Info .Contenedor .Info__Content{
+        flex-direction: column;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Imagen{
+        width: 100%;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Imagen Img{
+        width: 60%;
+        margin: 0 20% 0 20%;
+        border-radius: 5px;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Data{
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+
+@media screen and (min-width:720px) {
+    .Info .Contenedor .Info__Content{
+        flex-direction: row;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Imagen{
+        width: 50%;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Data{
+        width: 50%;
+        padding: 5%;
+    }
+    
+    .Info .Contenedor .Info__Content .Info__Content__Imagen Img{
+        width: 70%;
+        margin: 15%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .Info .Contenedor .Info__Content .Info__Content__Imagen{
+        width: 40%;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Data{
+        width: 60%;
+        padding: 5%;
+    }
+}

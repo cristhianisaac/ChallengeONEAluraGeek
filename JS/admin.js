@@ -9,12 +9,11 @@ function showName(){
   }
   const container = document.querySelector("[data]");
   const theName = document.createElement("div");
-  theName.className = 'Productos__Lista__Titulo';
-  theName.style ="margin-top: 80rem; margin-bottom:40rem;"
-  theName.innerHTML = `<h1 style='font-size:28rem;'>Hola ${name}!</h1>`;
+  theName.className = 'Productos__Lista__Titulo nombreAcceso';
+  theName.innerHTML = `<h1>Hola ${name}!</h1>`;
   const theTitle = document.createElement("div");
   theTitle.className = 'Productos__Lista__Titulo';
-  theTitle.innerHTML = `<h1>Administrador de productos</h1><button class="Demo" onclick="location.href='restock.html';">Agregar Producto</button>`;
+  theTitle.innerHTML = `<h1>Administrador de productos</h1><button class="botonAzul" onclick="location.href='restock.html';">Agregar Producto</button>`;
 
   container.appendChild(theName);
   container.appendChild(theTitle);

@@ -9,7 +9,7 @@ function login(){
   let password = document.getElementById('password');
   iniciaSesion(user.value, password.value);
   let name = getCookie('user');
-  if(name === undefined || name === ""){
+  if(name === undefined || name === null || name === ""){
     eraseCookie('user');
     Swal.fire({
       title: 'Error',

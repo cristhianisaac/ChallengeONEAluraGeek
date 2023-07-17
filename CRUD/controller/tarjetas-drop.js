@@ -1,12 +1,11 @@
 //Creando la card del producto
 export const MostrarProductos = (name, price, imageUrl, category, imageDescription, description, id) => {
     //Creando el div que guarda todo el card
-    const cardProducto = document.createElement("div");
-    cardProducto.className = "Producto";
+    const cardProducto = document.createElement('div');
+    cardProducto.className = 'Producto';
     const contenido = `      
-      <img src="${imageUrl}" alt="${imageDescription}" /><label
-                class="subtitulo">${name}</label><label class="titulo">$${price}</label><a href="../../producto.html?id=${id}" class="Rojo">Eliminar
-                producto</a>
+      <img src='${imageUrl}' alt='${imageDescription}' /><label
+                class='subtitulo'>${name}</label><label class='titulo'>$${price}</label><div class='modificaciones'><button onclick="location.href='../../restock.html?id=${id}'" class='Modificar'>Modificar</button><button class='Eliminar' id='${id}' name ='${name}'>Eliminar</button></div>
     `
     cardProducto.innerHTML = contenido;
     cardProducto.dataset.id = id;
