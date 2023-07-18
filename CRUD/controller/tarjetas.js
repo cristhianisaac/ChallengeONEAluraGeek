@@ -11,7 +11,7 @@ export const MostrarProductos = (name, price, imageUrl, category, imageDescripti
 
     const contenido = `      
       <img src="${imageUrl}" alt="${imageDescription}" /><label
-                class="titulo">${name}</label><label class="subtitulo">$${price}</label><div ${mobileStyle} class='modificaciones'><button onclick="location.href='../producto.html?id=${id}'" class='Visitar'><i class="fa-solid fa-up-right-from-square"></i></button></div>
+                class="titulo">${name}</label><label class="subtitulo">$${price}</label><div ${mobileStyle} class='modificaciones'><button onclick="location.href='producto.html?id=${id}'" class='Visitar'><i class="fa-solid fa-up-right-from-square"></i></button></div>
     `
     cardProducto.innerHTML = contenido;
     cardProducto.dataset.id = id;
