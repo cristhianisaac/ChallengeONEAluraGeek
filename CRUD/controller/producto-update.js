@@ -92,7 +92,7 @@ function update() {
       showConfirmButton: true,
       timer: 3000
     }).then((result) => {
-      window.location.href = "../../administrador.html";
+      window.location.href = "../administrador.html";
     });
   }).catch((err) => console.log(err));
 }
@@ -111,7 +111,7 @@ function insert() {
       showConfirmButton: false,
       timer: 3000
     }).then((result) => {
-      window.location.href = "../../administrador.html";
+      window.location.href = "../administrador.html";
     });
   }).catch((err) => console.log(err));
 }

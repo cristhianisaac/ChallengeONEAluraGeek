@@ -1097,7 +1097,7 @@
     addClass(container, swalClasses[`grow-${grow}`]);
   }
 
-  /// <reference path="../../../../sweetalert2.d.ts"/>
+  /// <reference path="../../sweetalert2.d.ts"/>
 
 
   /** @type {InputClass[]} */
