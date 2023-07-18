@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/header.css">
@@ -20,9 +22,9 @@
   <link rel="stylesheet" href="CSS/producto.css">
   <link rel="stylesheet" href="CSS/productos-lista.css">
 
-  <link rel="stylesheet" href="SWEETALERT/sweetalert2.css">  
+  <link rel="stylesheet" href="SWEETALERT/sweetalert2.css">
   <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>
-  
+
 </head>
 
 <body>
@@ -34,10 +36,10 @@
 
             <b class="Azul"><i class="fa-solid fa-gamepad"></i>Alura</b><b>Geek</b>
           </a>
-          <div role="search" class="Buscar">
+          <form role="search" class="Buscar" search>
             <input id="search" type="search" name="search" placeholder="¿Qué deseas buscar?" autocomplete="off"
               required="required" class="Buscar__input" spellcheck="false" data-ms-editor="true">
-            <button type="submit" title="Buscar." class="Buscar__submit">
+              <button type="submit" title="Buscar." class="Buscar__submit" onclick="buscar()">
               <svg role="img" aria-label="Search">
                 <use xlink:href="#sbx-icon-search-8"></use>
               </svg>
@@ -47,10 +49,10 @@
                 <use xlink:href="#sbx-icon-clear-3"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
         <div class="serch-only">
-          <button type="submit" title="Buscar." class="Buscar__submit">
+          <button type="submit" title="Buscar." class="Buscar__submit" onclick="preguntar()">
             <svg role="img" aria-label="Search">
               <use xlink:href="#sbx-icon-search-8"></use>
             </svg>
@@ -116,6 +118,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/bacd1a7eb3.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="JS/Funciones.js"></script>
+  <script type="text/javascript" src="JS/busquedas.js"></script>
   <script type="text/javascript" src="JS/forms.js"></script>
   <script src="CRUD/controller/productos.js" type="module"></script>
 </body>

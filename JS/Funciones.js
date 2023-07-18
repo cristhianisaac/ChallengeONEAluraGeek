@@ -1,10 +1,3 @@
-function ClearSearch() {
-  $("#search").val('');
-  setTimeout(function () {
-    $("#search").focus();
-  }, 10);
-}
-
 function logOut() {
   deleteAllCookies();
   location.href = 'login.html';

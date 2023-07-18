@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buy Star Wars Merchandise, Gaming Consoles, and Collectibles | AluraGeek</title>
-  <meta name="description" content="Discover a wide selection of Star Wars merchandise, gaming consoles, and collectibles at YourWebsiteName. Shop for character merchandise, gaming consoles like PlayStation 5 and Nintendo Switch, trading card games, and more. Get the best deals and indulge in your favorite fandoms.">
+  <meta name="description"
+    content="Discover a wide selection of Star Wars merchandise, gaming consoles, and collectibles at YourWebsiteName. Shop for character merchandise, gaming consoles like PlayStation 5 and Nintendo Switch, trading card games, and more. Get the best deals and indulge in your favorite fandoms.">
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="CSS/main.css">
 
@@ -22,9 +25,9 @@
   <link rel="stylesheet" href="CSS/categorias.css">
   <link rel="stylesheet" href="CSS/producto.css">
 
-  <link rel="stylesheet" href="SWEETALERT/sweetalert2.css">  
-  <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>  
-  
+  <link rel="stylesheet" href="SWEETALERT/sweetalert2.css">
+  <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>
+
 </head>
 
 <body>
@@ -33,13 +36,13 @@
       <div class="Contenedor">
         <div class="Nombre_Buscar">
           <a href="index.html" class="Nombre">
-            
+
             <b class="Azul"><i class="fa-solid fa-gamepad"></i>Alura</b><b class="Gray">Geek</b>
           </a>
-          <div role="search" class="Buscar">
+          <form role="search" class="Buscar" search>
             <input id="search" type="search" name="search" placeholder="¿Qué deseas buscar?" autocomplete="off"
               required="required" class="Buscar__input" spellcheck="false" data-ms-editor="true">
-            <button type="submit" title="Buscar." class="Buscar__submit">
+            <button type="submit" title="Buscar." class="Buscar__submit" onclick="buscar()">
               <svg role="img" aria-label="Search">
                 <use xlink:href="#sbx-icon-search-8"></use>
               </svg>
@@ -49,11 +52,11 @@
                 <use xlink:href="#sbx-icon-clear-3"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
         <a class="botonBlanco" href="login.html">Login</a>
         <div class="serch-only">
-          <button type="submit" title="Buscar." class="Buscar__submit">
+          <button type="submit" title="Buscar." class="Buscar__submit" onclick="preguntar()">
             <svg role="img" aria-label="Search">
               <use xlink:href="#sbx-icon-search-8"></use>
             </svg>
@@ -69,7 +72,8 @@
         <h3>
           Hasta 35% de descuento en productos seleccionados...
         </h3>
-        <button class="Formulario__Button botonAzul" onclick='window.location.href="../productos.html?category=Consolas";'>Ver Consolas</button>
+        <button class="Formulario__Button botonAzul"
+          onclick='window.location.href="../productos.html?category=Consolas";'>Ver Consolas</button>
       </div>
     </section>
     <section class="Categorias" data>
@@ -82,7 +86,7 @@
       <div class="Contenedor">
         <div class="Contacto__Menu">
           <label class="Nombre">
-            
+
             <b class="Azul"><i class="fa-solid fa-gamepad"></i>Alura</b><b>Geek</b>
           </label>
           <ul class="Contacto__Menu__Lista">
@@ -102,7 +106,7 @@
             <span class="Formulario__Focus-BG"></span>
           </label>
           <label for="mensaje" class="Formulario__Input">
-            <input type="text" id="mensaje"  required placeholder="&nbsp;" />
+            <input type="text" id="mensaje" required placeholder="&nbsp;" />
             <span class="Formulario__Label">Mensaje</span>
             <span class="Formulario__Focus-BG"></span>
           </label>
@@ -126,11 +130,12 @@
         fill-rule="evenodd" />
     </symbol>
   </svg>
-  
+
   <script type="text/javascript" src="SWEETALERT/sweetalert2.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/bacd1a7eb3.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="JS/Funciones.js"></script>
+  <script type="text/javascript" src="JS/busquedas.js"></script>
   <script type="text/javascript" src="JS/forms.js"></script>
   <script src="CRUD/controller/home.js" type="module"></script>
 </body>

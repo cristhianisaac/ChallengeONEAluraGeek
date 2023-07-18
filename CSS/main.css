@@ -20,13 +20,17 @@ html, body {
     overflow-x: hidden;
 }
 
-ul {
+.principal ul {
     list-style: none;
 }
 
-a {
+.principal a {
     cursor: pointer;
     text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+    block-size: fit-content;
+    
 }
 
 a:link,
@@ -85,10 +89,10 @@ a:visited {
         min-width: 328rem;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
+   .principal h1,
+   .principal h2,
+   .principal h3,
+   .principal h4 {
         margin-block-end: 5rem;
         padding-bottom: 10rem;
         line-height: 40rem;
@@ -103,16 +107,16 @@ a:visited {
         font-size: 15rem;
     }
 
-    h1 {
+   .principal h1 {
         font-size: 22rem;
     }
-    h2 {
+   .principal h2 {
         font-size: 20rem;
     }
-    h3 {
+   .principal h3 {
         font-size: 18rem;
     }
-    h4 {
+   .principal h4 {
         font-size: 16rem;
     }
 }
@@ -125,10 +129,10 @@ a:visited {
         min-width: 704rem;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
+   .principal h1,
+   .principal h2,
+   .principal h3,
+   .principal h4 {
         margin-block-end: 5rem;
         padding-bottom: 10rem;
         line-height: 45rem;
@@ -143,16 +147,16 @@ a:visited {
         font-size: 17rem;
     }
 
-    h1 {
+   .principal h1 {
         font-size: 28rem;
     }
-    h2 {
+   .principal h2 {
         font-size: 25rem;
     }
-    h3 {
+   .principal h3 {
         font-size: 22rem;
     }
-    h4 {
+   .principal h4 {
         font-size: 19rem;
     }
 }
@@ -165,10 +169,10 @@ a:visited {
         width: 1133rem;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
+   .principal h1,
+   .principal h2,
+   .principal h3,
+   .principal h4 {
         margin-block-end: 5rem;
         padding-bottom: 10rem;
         line-height: 60rem;
@@ -183,16 +187,16 @@ a:visited {
         font-size: 16rem;
     }
 
-    h1 {
+   .principal h1 {
         font-size: 32rem;
     }
-    h2 {
+   .principal h2 {
         font-size: 28rem;
     }
-    h3 {
+   .principal h3 {
         font-size: 24rem;
     }
-    h3 {
+   .principal h3 {
         font-size: 20rem;
     }
 }

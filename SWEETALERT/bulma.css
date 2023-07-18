@@ -276,7 +276,9 @@
   position: relative;
   max-width: 100%;
   margin: 0 !important;
-  padding: 0 !Important;
+  padding-left: 30rem !important;
+  padding-right: 30rem !important;
+  padding-top: 24rem !important;
   color: hsl(0deg, 0%, 21%);
   font-size: 32rem;
   font-weight: 600;

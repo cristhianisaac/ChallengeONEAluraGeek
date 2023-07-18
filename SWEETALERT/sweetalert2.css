@@ -1,7 +1,7 @@
 .swal2-popup.swal2-toast {
   box-sizing: border-box;
-  grid-column: 1/4 !important;
-  grid-row: 1/4 !important;
+  grid-column: 1/4;
+  grid-row: 1/4;
   grid-template-columns: min-content auto min-content;
   padding: 1em;
   overflow-y: hidden;
@@ -179,7 +179,7 @@ div:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swa
   background: rgba(0, 0, 0, 0.4);
 }
 div:where(.swal2-container).swal2-backdrop-hide {
-  background: transparent !important;
+  background: transparent;
 }
 div:where(.swal2-container).swal2-top-start, div:where(.swal2-container).swal2-center-start, div:where(.swal2-container).swal2-bottom-start {
   grid-template-columns: minmax(0, 1fr) auto auto;
@@ -245,7 +245,7 @@ div:where(.swal2-container).swal2-grow-column > .swal2-popup, div:where(.swal2-c
   align-self: stretch;
 }
 div:where(.swal2-container).swal2-no-transition {
-  transition: none !important;
+  transition: none;
 }
 div:where(.swal2-container) div:where(.swal2-popup) {
   display: none;
@@ -270,9 +270,13 @@ div:where(.swal2-container) div:where(.swal2-popup).swal2-loading {
 }
 div:where(.swal2-container) h2:where(.swal2-title) {
   position: relative;
+  width: auto;
   max-width: 100%;
   margin: 0;
-  padding: 0;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  padding-top: 24rem;
+  padding-bottom: 0!important;
   color: inherit;
   font-size: 32rem;
   font-weight: 600;
@@ -378,7 +382,7 @@ div:where(.swal2-container) .swal2-timer-progress-bar-container {
   right: 0;
   bottom: 0;
   left: 0;
-  grid-column: auto !important;
+  grid-column: auto;
   overflow: hidden;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -463,8 +467,8 @@ div:where(.swal2-container) textarea:where(.swal2-textarea) {
 div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,
 div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,
 div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror {
-  border-color: #f27474 !important;
-  box-shadow: 0 0 2px #f27474 !important;
+  border-color: #f27474;
+  box-shadow: 0 0 2px #f27474;
 }
 div:where(.swal2-container) input:where(.swal2-input):focus,
 div:where(.swal2-container) input:where(.swal2-file):focus,
@@ -1029,10 +1033,10 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   overflow: hidden;
 }
 body.swal2-height-auto {
-  height: auto !important;
+  height: auto;
 }
 body.swal2-no-backdrop .swal2-container {
-  background-color: transparent !important;
+  background-color: transparent;
   pointer-events: none;
 }
 body.swal2-no-backdrop .swal2-container .swal2-popup {
@@ -1043,13 +1047,13 @@ body.swal2-no-backdrop .swal2-container .swal2-modal {
 }
 @media print {
   body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
-    overflow-y: scroll !important;
+    overflow-y: scroll;
   }
   body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) > [aria-hidden=true] {
     display: none;
   }
   body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
-    position: static !important;
+    position: static;
   }
 }
 body.swal2-toast-shown .swal2-container {
