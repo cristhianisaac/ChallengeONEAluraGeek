@@ -1,7 +1,7 @@
-const listaUsuarios = () => fetch('http://localhost:3000/users').then(respuesta => respuesta.json()).catch(error => console.log(error));
+const listaUsuarios = () => fetch('https://crud-data.onrender.com/users').then(respuesta => respuesta.json()).catch(error => console.log(error));
 
 const buscaUsuario = (user) => {
-    return fetch(`http://localhost:3000/users?user=${user}`)
+    return fetch(`https://crud-data.onrender.com/users?user=${user}`)
     .then(
         respuesta => respuesta.json()
         )

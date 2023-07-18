@@ -1,4 +1,4 @@
-const listaCategorias = () => fetch('http://localhost:3000/categories').then(respuesta => respuesta.json()).catch(error => console.log(error));
+const listaCategorias = () => fetch('https://crud-data.onrender.com/categories').then(respuesta => respuesta.json()).catch(error => console.log(error));
 
 
 export const clientServicesCategorias = {

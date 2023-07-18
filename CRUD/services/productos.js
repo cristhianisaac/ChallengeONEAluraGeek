@@ -1,11 +1,11 @@
 
-const listaProductos = () => fetch('http://localhost:3000/products').then(respuesta => respuesta.json()).catch(error => console.log(error));
+const listaProductos = () => fetch('https://crud-data.onrender.com/products').then(respuesta => respuesta.json()).catch(error => console.log(error));
 
-const listaProductosCategoria = (caegory) =>fetch(`http://localhost:3000/products?category=${caegory}`).then(respuesta => respuesta.json()).catch(error => console.log(error));
+const listaProductosCategoria = (caegory) =>fetch(`https://crud-data.onrender.com/products?category=${caegory}`).then(respuesta => respuesta.json()).catch(error => console.log(error));
 
 const crearProducto = (name, price, imageUrl, imageDescription, description, category) => {
   
-  return fetch('http://localhost:3000/products', {
+  return fetch('https://crud-data.onrender.com/products', {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -15,18 +15,18 @@ const crearProducto = (name, price, imageUrl, imageDescription, description, cat
 };
 
 const eliminarProducto = (id) => {
-  return fetch(`http://localhost:3000/products/${id}`, {
+  return fetch(`https://crud-data.onrender.com/products/${id}`, {
     method: "DELETE"
   });
 };
 
 //Detalles del producto por ID
 const detalleProducto = async (id) => {
-  return fetch(`http://localhost:3000/products/${id}`).then( respuesta => respuesta.json());
+  return fetch(`https://crud-data.onrender.com/products/${id}`).then( respuesta => respuesta.json());
 };
 
 const actualizarProducto = (id, name, price, imageUrl, imageDescription, description, category) => {
-  return fetch(`http://localhost:3000/products/${id}`,{
+  return fetch(`https://crud-data.onrender.com/products/${id}`,{
     method: "PUT",
     headers: {
       "Content-Type": "application/json"
