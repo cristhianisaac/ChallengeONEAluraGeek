@@ -4,19 +4,22 @@
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     transition: all .2s linear;
-    margin: 2rem;
     overflow: hidden;
+    position: relative;
 }
 
-.Producto:hover{
-    box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
-    transform: scale(1.02);
+.Producto:hover {
+    box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
 }
 
-.Producto:hover img{
-  transform: scale(1.1);
-  transform-origin:  bottom;
-  transition: all .2s ease-in-out;
+.Producto:hover .modificaciones {
+    display: flex;
+}
+
+.Producto:hover img {
+    transform: scale(1.1);
+    transform-origin: bottom;
+    transition: all .2s ease-in-out;
 }
 
 .Producto a {
@@ -36,27 +39,107 @@
     overflow: hidden;
 }
 
+.Producto .modificaciones {
+    width: 100%;
+    justify-content: space-between;
+    margin: 10rem 0 10rem 0;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.Producto .modificaciones button {
+    border-radius: 5rem;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 3rem 5rem;
+    margin: 5rem;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 16rem;
+    text-align: center;
+    width: 35rem;
+    height: 30rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+}
+
+.Producto .modificaciones button:hover {
+    color: #ffffff;
+
+}
+
+.Producto .modificaciones button:hover i {
+    transform: scale(1.1);
+}
+
+.Producto .modificaciones .Modificar {
+    color: #2A7AE4;
+}
+
+.Producto .modificaciones .Modificar:hover {
+    background-color: #2A7AE4;
+}
+
+.Producto .modificaciones .Eliminar {
+    color: darkred;
+}
+
+.Producto .modificaciones .Eliminar:hover {
+    background-color: darkred;
+}
+
+.Producto .modificaciones .Visitar {
+    color: darkgreen;
+}
+
+.Producto .modificaciones .Visitar:hover {
+    background-color: darkgreen;
+}
+
 @media screen and (min-width:0px) {
     .Producto {
-        width: 156rem;
-        height: 257rem;
+        min-width: 164rem;
+        max-width: 164rem;
+        height: 215rem !important;
+        margin-left: 30rem;
+        margin-right: 30rem;
+        margin-bottom: 35rem;
     }
 
     .Producto img {
-        width: 156rem;
+        width: 164rem;
         height: 163rem;
+    }
+
+    .Producto .modificaciones {
+        top: 114rem;
+    }
+}
+
+
+@media screen and (min-width:550px) {
+    .Producto {
+        margin: 2rem;
+        margin-bottom: 30rem;
     }
 }
 
 @media screen and (min-width:720px) {
     .Producto {
-        width: 164rem;
-        height: 260rem;
+        height: 225rem !important;
     }
 
     .Producto img {
-        width: 164rem;
         height: 170rem;
+    }   
+
+    .Producto .modificaciones {
+        top: 120rem;
     }
 }
 
@@ -64,10 +147,12 @@
 @media screen and (min-width:1024px) {
 
     .Producto {
-        width: 176rem;
+        min-width: 176rem;
+        max-width: 176rem;
     }
 
     .Producto img {
         width: 176rem;
+        height: 170rem;
     }
 }

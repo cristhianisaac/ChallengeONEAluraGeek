@@ -59,3 +59,4 @@ function convertImageToBase64(imageUrl) {
     image.src = imageUrl;
   });
 }
+

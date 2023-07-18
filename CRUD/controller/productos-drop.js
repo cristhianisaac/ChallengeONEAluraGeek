@@ -4,7 +4,6 @@ import { MostrarProductos } from "./tarjetas-drop.js";
 
 
 cargaPRoductos();
-
 function cargaPRoductos() {
     const Contenedor = document.createElement("div");
     Contenedor.className = "Productos__Lista__Productos";
@@ -23,7 +22,6 @@ function cargaPRoductos() {
 }
 
 const targetClassName = 'Producto';
-
 const handleElementAdded = (mutationsList, observer) => {
     for (let mutation of mutationsList) {
         if (mutation.type === 'childList') {

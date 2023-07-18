@@ -2,7 +2,7 @@
 import { iniciaSesion } from "../CRUD/controller/usuario.js";
 
 var button = document.getElementById('login');
-button.addEventListener("click", login);
+button.addEventListener("click", (event) => {login();});
 
 function login(){
   let user = document.getElementById('user');

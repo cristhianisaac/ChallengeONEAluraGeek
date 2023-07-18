@@ -13,16 +13,13 @@
         width: 100%;
     }
 
-    .Info .Contenedor .Info__Content p{
-        width: 100%;
-    }
-
     .Info .Contenedor .Info__Content .Info__Content__Data{
         display: flex;
         flex-direction: column;
         justify-content: space-around;   
         align-items: center; 
     }
+
     .Info .Contenedor .Info__Content .Info__Content__Imagen{
         display: flex;
         flex-direction: column;
@@ -47,7 +44,15 @@
     }
     .Info .Contenedor .Info__Content .Info__Content__Data{
         width: 100%;
-        padding: 5%;
+    }
+    
+    .Info .Contenedor .Info__Content .Info__Content__Data h2{
+        margin-top: 50rem;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Data *{
+        width: 80%;
+        margin: 10rem 10%;
+        padding: 5rem 100rem;
     }
 }
 
@@ -57,17 +62,26 @@
         flex-direction: row;
     }
     .Info .Contenedor .Info__Content .Info__Content__Imagen{
-        width: 50%;
+        width: 45%;
     }
     .Info .Contenedor .Info__Content .Info__Content__Data{
-        width: 50%;
+        width: 55%;
         padding: 5%;
     }
     
     .Info .Contenedor .Info__Content .Info__Content__Imagen Img{
-        width: 70%;
-        margin: 15%;
+        width: 80%;
+        margin: 10%;
         border-radius: 5px;
+    }
+    
+    .Info .Contenedor .Info__Content .Info__Content__Data h2{
+        margin-top: 10rem;
+    }
+    .Info .Contenedor .Info__Content .Info__Content__Data *{
+        width: 100%;
+        margin: 10rem 0;
+        padding: 5rem 10rem;
     }
 }
 
