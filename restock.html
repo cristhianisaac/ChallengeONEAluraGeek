@@ -31,13 +31,12 @@
       <div class="Contenedor">
         <div class="Nombre_Buscar">
           <a href="index.html" class="Nombre">
-
             <b class="Azul"><i class="fa-solid fa-gamepad"></i>Alura</b><b>Geek</b>
           </a>
           <form role="search" class="Buscar" search>
             <input id="search" type="search" name="search" placeholder="¿Qué deseas buscar?" autocomplete="off"
               required="required" class="Buscar__input" spellcheck="false" data-ms-editor="true">
-              <button type="submit" title="Buscar." class="Buscar__submit" onclick="buscar()">
+            <button type="submit" title="Buscar." class="Buscar__submit" onclick="buscar()">
               <svg role="img" aria-label="Search">
                 <use xlink:href="#sbx-icon-search-8"></use>
               </svg>
@@ -47,7 +46,7 @@
                 <use xlink:href="#sbx-icon-clear-3"></use>
               </svg>
             </button>
-          </div>
+        </div>
         </form>
         <a class="botonBlanco" href="administrador.html">Menu Administrador</a>
         <div class="serch-only">
@@ -61,44 +60,51 @@
     </section>
     <section class="Stock">
       <div class="Contenedor">
-        <form class="Formulario" data>
-          <h2>Agregar nuevo producto</h2>
-          <label for="nombre" class="Formulario__Input">
-            <input type="text" id="nombre" required placeholder="&nbsp;" />
-            <span class="Formulario__Label">Nombre del producto</span>
-            <span class="Formulario__Focus-BG"></span>
-          </label>
-          <label for="descripcion" class="Formulario__Input">
-            <input type="text" id="descripcion" placeholder="&nbsp;" />
-            <span class="Formulario__Label">Descripción</span>
-            <span class="Formulario__Focus-BG"></span>
-          </label>
-          <label for="precio" class="Formulario__Input">
-            <input type="number" step=".01" id="precio" placeholder="&nbsp;" />
-            <span class="Formulario__Label">Precio</span>
-            <span class="Formulario__Focus-BG"></span>
-          </label>
-          <div class="Formulario__Input Upload__Image">
-            <div class="Preview">
-              <img id="Preview__Image">
+        <form class="Formulario" data><h2>Agregar nuevo producto</h2>
+          <div class="colums">
+            <div class="datos">
+              <label for="nombre" class="Formulario__Input">
+                <input type="text" id="nombre" required placeholder="&nbsp;" />
+                <span class="Formulario__Label">Nombre del producto</span>
+                <span class="Formulario__Focus-BG"></span>
+              </label>
+              <label for="descripcion" class="Formulario__Input">
+                <input type="text" id="descripcion" placeholder="&nbsp;" />
+                <span class="Formulario__Label">Descripción</span>
+                <span class="Formulario__Focus-BG"></span>
+              </label>
+              <label for="precio" class="Formulario__Input">
+                <input type="number" step=".01" id="precio" placeholder="&nbsp;" />
+                <span class="Formulario__Label">Precio</span>
+                <span class="Formulario__Focus-BG"></span>
+              </label>
+  
+              <label for="categoria" class="Formulario__Input categoria">
+                <span class="Formulario__Label">Categoria</span>
+                <span class="Formulario__Focus-BG"></span>
+                <select id="categoria">
+                </select>
+              </label>
+              
+              <label for="imageUrl" class="Formulario__Input">
+                <input type="text" id="imageUrl" placeholder="&nbsp;" readonly disabled class="noSelection"/>
+                <span class="Formulario__Label">URL de imagen</span>
+                <span class="Formulario__Focus-BG"></span>
+              </label>
             </div>
-            <div>
-              <label class="botonBlanco" for="image">Upload Image</label>
-              <input type="file" id="image" accept=".png, .jpg, .jpeg .webp" onchange="showPreview(event);">
+            <div class="upload">
+              <div class="Formulario__Input Upload__Image">
+                <div class="Preview">
+                  <img id="Preview__Image" src="IMG/Vector-imagen.svg">
+                </div>
+                <div>
+                  <label class="botonBlanco" for="image">Upload Image</label>
+                  <input type="file" id="image" accept=".png, .jpg, .jpeg .webp" max-file-size="500" onblur="initialize();"onclick="initialize();" onchange="showPreview(event);">
+                </div>
+              </div>
             </div>
-          </div>
-          <label for="imageUrl" class="Formulario__Input">
-            <input type="text" id="imageUrl" placeholder="&nbsp;" readonly />
-            <span class="Formulario__Label">URL de imagen</span>
-            <span class="Formulario__Focus-BG"></span>
-          </label>
-          <label for="categoria" class="Formulario__Input categoria">
-            <span class="Formulario__Label">Categoria</span>
-            <span class="Formulario__Focus-BG"></span>
-            <select id="categoria">
-            </select>
-          </label>
-          <input type="submit" id="Aceptar" class="Formulario__Button botonAzul" value="Agregar"/>
+          </div>          
+          <input type="submit" id="Aceptar" class="Formulario__Button botonAzul" value="Agregar" />
         </form>
       </div>
     </section>
@@ -153,7 +159,8 @@
   <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/bacd1a7eb3.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="JS/Funciones.js"></script><script type="text/javascript" src="JS/busquedas.js"></script>
+  <script type="text/javascript" src="JS/Funciones.js"></script>
+  <script type="text/javascript" src="JS/busquedas.js"></script>
   <script type="text/javascript" src="JS/forms.js"></script>
   <script src="CRUD/controller/producto-update.js" type="module"></script>
 </body>

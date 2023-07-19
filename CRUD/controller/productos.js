@@ -29,6 +29,7 @@ function CargaProductos() {
             });
         }
         else {
+            document.getElementById('search').value = findParam;
             productos.firstChild.firstChild.innerHTML = "Resultados...";            
             productos.firstChild.appendChild(button);
 

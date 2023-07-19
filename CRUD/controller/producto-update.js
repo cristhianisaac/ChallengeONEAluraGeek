@@ -64,7 +64,7 @@ if (id !== null) {
   document.getElementById("imageUrl").closest(".Formulario__Input").classList.add("Formulario__Input__Valid");
 
   document.getElementById("Aceptar").value = "Guardar";
-
+  document.querySelector("[data]").firstChild.innerHTML = "Actualizar producto..."
   document.querySelector("[data]").addEventListener("submit", (event) => {
     event.preventDefault();
     update();
